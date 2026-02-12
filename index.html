@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kabya Music | Official Artist Website</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:"Poppins",sans-serif;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:radial-gradient(circle,#050010,#000);
+      color:white;
+      text-align:center;
+    }
+
+    /* Navbar */
+    nav{
+      position:sticky;
+      top:0;
+      z-index:999;
+      background:rgba(0,0,0,0.95);
+      padding:15px;
+      box-shadow:0 0 20px violet;
+    }
+
+    nav a{
+      color:violet;
+      text-decoration:none;
+      margin:12px;
+      font-size:17px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:hotpink;
+    }
+
+    /* Hero */
+    .hero{
+      height:100vh;
+      background:url("https://wallpapercave.com/wp/wp7488226.jpg")
+      no-repeat center;
+      background-size:cover;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      padding:20px;
+    }
+
+    .hero h1{
+      font-size:85px;
+      color:#ff66ff;
+      text-shadow:0 0 25px black;
+      animation:glow 2s infinite alternate;
+    }
+
+    @keyframes glow{
+      from{text-shadow:0 0 15px violet;}
+      to{text-shadow:0 0 40px hotpink;}
+    }
+
+    .hero p{
+      font-size:22px;
+      margin-top:15px;
+      background:rgba(0,0,0,0.7);
+      padding:12px 30px;
+      border-radius:20px;
+    }
+
+    /* Buttons */
+    .btn{
+      margin-top:25px;
+      padding:15px 45px;
+      border:none;
+      border-radius:40px;
+      background:violet;
+      font-size:18px;
+      font-weight:bold;
+      cursor:pointer;
+      transition:0.3s;
+      box-shadow:0 0 20px violet;
+    }
+
+    .btn:hover{
+      background:hotpink;
+      transform:scale(1.1);
+      box-shadow:0 0 30px hotpink;
+    }
+
+    section{
+      padding:90px 20px;
+    }
+
+    h2{
+      font-size:55px;
+      margin-bottom:25px;
+      color:violet;
+    }
+
+    /* Cards */
+    .cards{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:25px;
+    }
+
+    .card{
+      background:rgba(25,0,45,0.9);
+      padding:25px;
+      width:320px;
+      border-radius:25px;
+      box-shadow:0 0 20px rgba(200,0,255,0.6);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-12px);
+      box-shadow:0 0 35px violet;
+    }
+
+    /* Videos */
+    iframe{
+      width:95%;
+      max-width:750px;
+      height:400px;
+      border-radius:20px;
+      margin:20px;
+      box-shadow:0 0 25px violet;
+    }
+
+    /* Gallery */
+    .gallery{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:20px;
+    }
+
+    .photo{
+      width:250px;
+      height:180px;
+      border-radius:20px;
+      background:linear-gradient(to right,violet,hotpink);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-size:20px;
+      font-weight:bold;
+      box-shadow:0 0 20px violet;
+    }
+
+    /* Music Player */
+    audio{
+      width:85%;
+      max-width:520px;
+      margin-top:25px;
+    }
+
+    /* Contact Form */
+    form{
+      max-width:520px;
+      margin:auto;
+      display:flex;
+      flex-direction:column;
+      gap:15px;
+    }
+
+    input,textarea{
+      padding:15px;
+      border-radius:15px;
+      border:none;
+      outline:none;
+      font-size:16px;
+    }
+
+    textarea{height:120px;}
+
+    /* Footer */
+    footer{
+      background:black;
+      padding:30px;
+      color:gray;
+      font-size:14px;
+      box-shadow:0 0 20px violet;
+    }
+
+    /* Responsive */
+    @media(max-width:768px){
+      .hero h1{font-size:55px;}
+      iframe{height:250px;}
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#channel">Channel</a>
+  <a href="#videos">Videos</a>
+  <a href="#music">Music</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- Hero -->
+<div class="hero" id="home">
+  <h1>🎶 Kabya Music</h1>
+  <p>Official Artist Website | Songs • Shorts • Edits ✨</p>
+
+  <a href="https://youtube.com/@kabya_music0718?si=OVXDJ1vPd_bm398b" target="_blank">
+    <button class="btn">🔴 Subscribe on YouTube</button>
+  </a>
+</div>
+
+<!-- About -->
+<section id="about">
+  <h2>About Kabya Music</h2>
+  <div class="cards">
+    <div class="card">🎤 Singer & Creator<br>Trending Music Videos</div>
+    <div class="card">🎧 Passion<br>Music is my life ❤️</div>
+    <div class="card">🌟 Dream<br>Reach Millions Worldwide</div>
+  </div>
+</section>
+
+<!-- Channel -->
+<section id="channel">
+  <h2>🔴 Official YouTube Channel</h2>
+  <p style="font-size:22px;">Subscribe for latest songs & edits every week 🎶🔥</p>
+
+  <a href="https://youtube.com/@kabya_music0718?si=OVXDJ1vPd_bm398b" target="_blank">
+    <button class="btn">🚀 Visit Kabya Music Channel</button>
+  </a>
+
+  <h3 style="margin-top:40px;color:hotpink;">🎥 Auto Latest Uploads Preview</h3>
+  <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=kabya_music0718"></iframe>
+</section>
+
+<!-- Videos -->
+<section id="videos">
+  <h2>🎥 Latest Music Videos</h2>
+  <iframe src="https://www.youtube.com/embed/qxdjS7Xy6CU"></iframe>
+  <iframe src="https://www.youtube.com/embed/9CdThYx44Gw"></iframe>
+  <iframe src="https://www.youtube.com/embed/RtNEb33u5eE"></iframe>
+  <iframe src="https://www.youtube.com/embed/wtA2oOPtO3U"></iframe>
+</section>
+
+<!-- Music -->
+<section id="music">
+  <h2>🎧 Music Player</h2>
+  <p>Upload your track as <b>song.mp3</b> and play here 🎶</p>
+  <audio controls>
+    <source src="song.mp3" type="audio/mpeg">
+  </audio>
+
+  <h3 style="margin-top:40px;color:hotpink;">🎵 Streaming Platforms</h3>
+  <button class="btn">Spotify 🎶</button>
+  <button class="btn">JioSaavn 🎧</button>
+</section>
+
+<!-- Gallery -->
+<section id="gallery">
+  <h2>📸 Artist Gallery</h2>
+  <div class="gallery">
+    <div class="photo">🎤 Live Show</div>
+    <div class="photo">🎶 Studio</div>
+    <div class="photo">🌟 Shorts</div>
+    <div class="photo">❤️ Fans</div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>📩 Contact Kabya Music</h2>
+
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Write message..."></textarea>
+    <button class="btn">Send Message 💌</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  © 2026 Kabya Music | Official Website 🎶✨ <br>
+  Subscribe: @kabya_music0718 ❤️
+</footer>
+
+</body>
+</html>
+        
